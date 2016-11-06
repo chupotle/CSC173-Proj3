@@ -1,0 +1,8 @@
+(define (sumfact n i)
+  (cond
+    ((= i 1) 1)
+    ((= (remainder n i) 0)
+     (+ i (sumfact n (- i 1))))
+    (else (sumfact n (- i 1)))))
+
+(sumfact 8128 8127)

@@ -5,7 +5,7 @@
      (+ i (sumfact n (- i 1))))
     (else (sumfact n (- i 1)))))
 
-(sumfact 8128 8127)
+(sumfact 8128 (- 8129 1))
 
 
 (define (perfectnum n)
