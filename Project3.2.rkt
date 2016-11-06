@@ -7,7 +7,7 @@
 
 (define (isPerf low high)
   (cond
-    [(not(= low high))
+    [(not(> low high))
      (cond
        [(= low (sumfact low (- low 1))) (display low)(display " perfect \n")]
        [(< low (sumfact low (- low 1))) (display low)(display " deficient \n")]
