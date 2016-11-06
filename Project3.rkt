@@ -28,6 +28,11 @@
        [else #f])
     (isPerf (+ low 1) high)]))
 
+;Part 1
+;do not change the first number, 3 is the number of perfect numbers to be printed
 (perfectnum 2 3)
 (display "\n")
+
+;Part 2
+;the two numbers is the range of numbers to check
 (isPerf 2 1000)
