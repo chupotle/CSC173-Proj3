@@ -22,9 +22,9 @@
   (cond
     [(not(> low high)) ;;if we reached the end of the list
      (cond
-       [(= low (sumfact low (- low 1))) (display low)(display " perfect \n")];;sum of factors = number
-       [(< low (sumfact low (- low 1))) (display low)(display " abundant \n")];;sum of factors < number
-       [(> low (sumfact low (- low 1))) (display low)(display " deficient \n")];;sum of factors > number
+       [(= low (/(sumfact low low)2)) (display low)(display " ")(display(sumfact low low))(display " perfect \n")];;sum of factors = number
+       [(< low (/(sumfact low low)2)) (display low)(display " ")(display(sumfact low low))(display " abundant \n")];;sum of factors < number
+       [(> low (/(sumfact low low)2)) (display low)(display " ")(display(sumfact low low))(display " deficient \n")];;sum of factors > number
        [else #f])
     (isPerf (+ low 1) high)]))
 
@@ -35,4 +35,4 @@
 
 ;Part 2
 ;the two numbers is the range of numbers to check
-(isPerf 2 1000)
+(isPerf 1 100)
